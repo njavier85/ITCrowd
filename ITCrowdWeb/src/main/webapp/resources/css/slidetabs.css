@@ -1,0 +1,257 @@
+﻿#home.SlideTabs {
+	display:block;
+	clear:both;
+	width:919px;
+	margin:0px auto;
+	position:relative; }
+#home.SlideTabs .Slides {	/* container for slides */
+	/* background:#EEE;
+	border:1px solid #999; */
+	position:relative;	
+	height:341px;
+	width:919px;
+	margin:0 0 5px;
+	}
+	/* CSS3 tweaks for modern browsers */
+	/* -moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-box-shadow:0 0 5px rgba(0,0,0,0.25);
+	-webkit-box-shadow:0 0 5px rgba(0,0,0,0.25); */ 
+/* single slide */
+
+#home.SlideTabs .Slides div:first-child {
+display: none;
+}
+
+#home.SlideTabs .tabs:first-child {display: none}
+
+#home.SlideTabs .Slides div 
+{
+    position: relative;
+	height:341px;
+	width: 919px;
+	font-size:12px;
+	display:none;	
+	 }
+	
+#home.SlideTabs .Slides div img{	
+	display: block;
+	position: absolute;
+	left: 0;
+	z-index: 1;
+	width: 919px;
+}
+	
+#home.SlideTabs .Slides div table{	
+position: absolute;
+width: 370px;
+left: 544px;
+top: 78px;
+z-index: 5;
+}
+	
+#home.SlideTabs .Slides div p{	
+font-weight: bold;
+z-index: 5;
+clear: both;
+}
+		
+#home.SlideTabs .Slides div a.btnLearn 
+{
+background:url('/Collateral/Images/English-US/home-panels/btnLearnMore.png') no-repeat;
+width: 110px;
+height: 46px;
+display: block;
+text-indent: -9999px;
+}	
+	
+	
+#home.SlideTabs .Tabs {	/* tabs (those little circles below slides) */
+	display:block;
+	z-index: 50;
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin-right: 10px;
+	padding-top: 20px;
+	width: 121px;
+	text-align:center;
+	overflow:hidden;
+	line-height:10px; }
+#home.SlideTabs .Tabs a {	/* single tab */
+	 background:#EEE;
+	/*border:1px solid #999; */
+	width:121px;
+	height:56px;
+	margin: 2px 0;
+	display:inline-block;
+	font-size:1px;}
+
+	#home.SlideTabs .Tabs a:first-child + a {	/* single tab */
+		background: url(/Collateral/Images/English-US/home-panels/homeslide_apps_off.jpg) no-repeat;
+	}
+	#home.SlideTabs .Tabs a:first-child + a + a {	/* single tab */
+		background: url(/Collateral/Images/English-US/home-panels/homeslide_m2m_off.jpg) no-repeat;
+	}
+	#home.SlideTabs .Tabs a:first-child + a + a + a {	/* single tab */
+		background: url(/Collateral/Images/English-US/home-panels/homeslide_workflow_off.jpg) no-repeat;
+	}
+	#home.SlideTabs .Tabs a:first-child + a + a + a + a {	/* single tab */
+		background: url(/Collateral/Images/English-US/home-panels/homeslide_mobigateway_off.jpg) no-repeat;
+	}
+		#home.SlideTabs .Tabs a:first-child + a + a + a + a + a {	/* single tab */
+		background: url(/Collateral/Images/English-US/home-panels/homeslide_hardware_off.jpg) no-repeat;
+	}
+	
+
+	#home.SlideTabs .Tabs a:first-child + a:hover, #home.SlideTabs .Tabs a:first-child + a:active, #home.SlideTabs .Tabs a:first-child + a.current{	/* single tab */
+		background: url(/Collateral/Images/English-US/home-panels/homeslide_apps_on.jpg) no-repeat;
+	}
+	
+	#home.SlideTabs .Tabs a:first-child + a + a:hover, #home.SlideTabs .Tabs a:first-child + a + a:active, #home.SlideTabs .Tabs a:first-child + a + a.current{	/* single tab */
+		background: url(/Collateral/Images/English-US/home-panels/homeslide_m2m_on.jpg) no-repeat;
+	}
+	#home.SlideTabs .Tabs a:first-child + a + a + a:hover, #home.SlideTabs .Tabs a:first-child + a + a + a:active, #home.SlideTabs .Tabs a:first-child + a + a + a.current{	/* single tab */
+		background: url(/Collateral/Images/English-US/home-panels/homeslide_workflow_on.jpg) no-repeat;
+	}
+	#home.SlideTabs .Tabs a:first-child + a + a + a +a:hover, #home.SlideTabs .Tabs a:first-child + a + a + a +a:active, #home.SlideTabs .Tabs a:first-child + a + a + a +a.current{	/* single tab */
+		background: url(/Collateral/Images/English-US/home-panels/homeslide_mobigateway_on.jpg) no-repeat;
+	}
+	#home.SlideTabs .Tabs a:first-child + a + a + a +a + a:hover, #home.SlideTabs .Tabs a:first-child + a + a + a +a + a:active, #home.SlideTabs .Tabs a:first-child + a + a + a +a + a.current{	/* single tab */
+		background: url(/Collateral/Images/English-US/home-panels/homeslide_hardware_on.jpg) no-repeat;
+	}	
+
+
+
+
+	
+	
+#home.SlideTabs .Tabs a:hover {	/* mouseover state */
+	background:#FFF;
+	/* border:1px solid #AAA; */ }
+#home.SlideTabs .Tabs a:active {
+	-moz-box-shadow: 0 0 3px #CCC inset ;
+	-webkit-box-shadow: 0 0 3px #CCC inset; }
+#home.SlideTabs .Tabs a.current {	/* active state (current page state) */
+	/* background:#CCC; */
+	/*border:1px solid #999;*/ }
+#home.SlideTabs .Navi {	/* Prev/Next Navigation Container */
+	display:block;
+	width:100%; }
+#home.SlideTabs .Next, #home.SlideTabs .Prev {	/* prev and next buttons */
+	background:#fff url(images/hori_large.png) no-repeat;
+	display:block;
+	width:30px;
+	height:30px;
+	cursor:pointer;
+	font-size:1px;
+	text-indent:-9999em;
+	margin:0 5px; }
+#home.SlideTabs .Next {
+	float:right; }
+#home.SlideTabs .Prev {
+	float:left; }
+#home.SlideTabs .Controls {
+	display:block;
+	text-align:center;
+	padding:5px; }
+/* next */
+#home.SlideTabs .Next		{ background-position: 0 -30px; clear:right; }
+#home.SlideTabs .Next:hover	{ background-position:-30px -30px; }
+#home.SlideTabs .Next:active	{ background-position:-60px -30px; } 
+/* prev */
+#home.SlideTabs .Prev:hover	{ background-position:-30px 0; }
+#home.SlideTabs .Prev:active	{ background-position:-60px 0; }
+#home.SlideTabs .disabled {	/* disabled navigational button. is not needed when tabs are configured with rotate: true */
+	opacity:0.5; }
+	
+	
+	
+	
+	
+#homeshow.SlideTabs {
+	display:block;
+	clear:both;
+	width:430px;
+	margin:0px auto;
+	position:relative; }
+#homeshow.SlideTabs .Slides {	/* container for slides */
+	/* background:#EEE;
+	border:1px solid #999; */
+	position:relative;	
+	height:300px;
+	width:430px;
+	margin:0 0 5px;
+	cursor:pointer;
+ }
+/* single slide */
+#homeshow.SlideTabs .Slides div {
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	border: 1px solid #ccc;		
+	margin:7px;
+	width: 400px;
+	/* padding:15px 30px 15px 15px; */
+	height:138px;
+	padding: 10px;
+	font-size:12px; }
+	
+	
+#homeshow.SlideTabs .Tabs {	/* tabs (those little circles below slides) */
+	display:block;
+	position: absolute;
+	bottom: 40px;
+	right: 20px;
+	text-align:center;
+	overflow:hidden;
+	line-height:10px; }
+	
+#homeshow.SlideTabs .Tabs a {	/* single tab */
+background:url('/Collateral/Templates/Common/Images/ico_pagination_off.gif') no-repeat;
+	width:13px;
+	height:13px;
+	margin:1px;
+	display:inline-block;
+	font-size:1px;
+ }
+#homeshow.SlideTabs .Tabs a:hover {	/* mouseover state */
+	background:url('/Collateral/Templates/Common/Images/ico_pagination_on.gif') no-repeat;
+ }
+#homeshow.SlideTabs .Tabs a:active {
+background:url('/Collateral/Templates/Common/Images/ico_pagination_on.gif') no-repeat;
+}
+#homeshow.SlideTabs .Tabs a.current {	/* active state (current page state) */
+background:url('/Collateral/Templates/Common/Images/ico_pagination_on.gif') no-repeat;
+	 }
+#homeshow.SlideTabs .Navi {	/* Prev/Next Navigation Container */
+	display:block;
+	width:100%; }
+#homeshow.SlideTabs .Next, #homeshow.SlideTabs .Prev {	/* prev and next buttons */
+	background:#fff url(images/hori_large.png) no-repeat;
+	display:block;
+	width:30px;
+	height:30px;
+	cursor:pointer;
+	font-size:1px;
+	text-indent:-9999em;
+	margin:0 5px; }
+#homeshow.SlideTabs .Next {
+	float:right; }
+#homeshow.SlideTabs .Prev {
+	float:left; }
+#homeshow.SlideTabs .Controls {
+	display:block;
+	text-align:center;
+	padding:5px; }
+/* next */
+#homeshow.SlideTabs .Next		{ background-position: 0 -30px; clear:right; }
+#homeshow.SlideTabs .Next:hover	{ background-position:-30px -30px; }
+#homeshow.SlideTabs .Next:active	{ background-position:-60px -30px; } 
+/* prev */
+#homeshow.SlideTabs .Prev:hover	{ background-position:-30px 0; }
+#homeshow.SlideTabs .Prev:active	{ background-position:-60px 0; }
+#homeshow.SlideTabs .disabled {	/* disabled navigational button. is not needed when tabs are configured with rotate: true */
+	opacity:0.5; }	
+	
